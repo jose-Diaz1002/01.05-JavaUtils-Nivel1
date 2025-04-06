@@ -1,9 +1,12 @@
-ApiFile(español).docx[F]
-ApiFile.docx[F]
-[D]jose--> leer.txt
---> programas
-manuela.txt[F]
-[D]trabajo--> otro.txt
-[D]Zeta--> luna.txt
---> papa
---> sol.txt
+[F]ApiFile(español).docx
+[F]ApiFile.docx
+[D]jose
+   --> leer.txt
+   --> programas
+[F]manuela.txt
+[D]trabajo
+   --> otro.txt
+[D]Zeta
+   --> luna.txt
+   --> papa
+   --> sol.txt
