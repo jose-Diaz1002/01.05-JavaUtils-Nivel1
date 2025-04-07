@@ -1,6 +1,8 @@
-package exerise3;
+package exercise3;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Directories {
 
@@ -9,6 +11,7 @@ public class Directories {
         String content = "";
 
         String[] namesFiles = file.list();
+        SimpleDateFormat modificationDate = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
         for (String name : namesFiles) {
 
@@ -16,7 +19,8 @@ public class Directories {
 
             if (markDirectoriesFiles.isDirectory()) {
 
-                content += "[D]"+ name + "\n";
+                content += "[D]"+ name + " Date: "+
+                modificationDate.format(new Date(markDirectoriesFiles.lastModified())) +"\n";
             }
 
             if(markDirectoriesFiles.isDirectory()){

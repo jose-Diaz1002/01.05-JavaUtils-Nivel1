@@ -1,4 +1,4 @@
-package exerise3;
+package exercise3;
 
 public class Main {
 

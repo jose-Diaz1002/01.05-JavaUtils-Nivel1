@@ -1,4 +1,4 @@
-package exerise3;
+package exercise3;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
