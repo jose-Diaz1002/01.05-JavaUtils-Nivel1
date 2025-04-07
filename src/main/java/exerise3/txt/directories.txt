@@ -2,11 +2,9 @@
 [F]ApiFile.docx
 [D]jose
    --> leer.txt
-   --> programas
 [F]manuela.txt
 [D]trabajo
    --> otro.txt
 [D]Zeta
    --> luna.txt
-   --> papa
    --> sol.txt
