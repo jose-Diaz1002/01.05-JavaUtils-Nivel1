@@ -28,35 +28,46 @@ Now the program must serialize a Java Object to a .ser file and then deserialize
 ## Exercise 1
 
 1. First, navigate to the src/main/java directory:
+   
       cd src/main/java
 
 2. For Exercise 1 (Directory Listing):
    Compile:
+   
      javac exercise1/*.java
    Execute:
+   
      java exercise1.main "C:/your/path"
 
 ## Exercise 2
 
 1. First, navigate to the src/main/java directory:
-     > cd src/main/java
+ 
+     cd src/main/java
 
 2. For Exercise 2 (Directory Listing):
+   
    Compile:
+   
      javac exercise2/*.java
    Execute:
+   
      java exercise2.main "C:/your/path"
 
 ## Exercise 3
 
-
 1. First, navigate to the src/main/java directory:
+   
      cd src/main/java
 
 2. For Exercise 3 (Directory Listing):
+   
    Compile:
+   
      javac exercise3/*.java
+   
    Execute:
+   
      java exercise3.main "C:/your/path" "output.txt"
      
      (Remember to enter the two absolute paths: the directory
@@ -65,23 +76,30 @@ Now the program must serialize a Java Object to a .ser file and then deserialize
 ## Exercise 4
 
 1. First, navigate to the src/main/java directory:
+   
      > cd src/main/java
 
 2. For Exercise 4 (Directory Listing):
    Compile:
+   
      javac exercise4/*.java
    Execute:
+   
      java exercise4.main "C:/your/path"
 
 ## Exercise 5
 
 1. First, navigate to the src/main/java directory:
+   
      > cd src/main/java
 
 2. For Exercise 5 (Directory Listing):
+   
    Compile:
+      
      javac exercise5/*.java
    Execute:
+   
      java exercise5.main "C:/your/path"
 
 ## IMPORTANT NOTES:
