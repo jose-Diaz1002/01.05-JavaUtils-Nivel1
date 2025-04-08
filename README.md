@@ -77,7 +77,7 @@ Now the program must serialize a Java Object to a .ser file and then deserialize
 
 1. First, navigate to the src/main/java directory:
    
-     > cd src/main/java
+     cd src/main/java
 
 2. For Exercise 4 (Directory Listing):
    Compile:
@@ -91,7 +91,7 @@ Now the program must serialize a Java Object to a .ser file and then deserialize
 
 1. First, navigate to the src/main/java directory:
    
-     > cd src/main/java
+     cd src/main/java
 
 2. For Exercise 5 (Directory Listing):
    
