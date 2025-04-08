@@ -1,21 +1,21 @@
 01.05 Java Utils - Level 1
 ==========================
 
-#Exercise 1
+Exercise 1:
 Create a class that alphabetically lists the contents of a directory passed as a parameter.
 
-#Exercise 2
+Exercise 2:
 Add to the class from the previous exercise the functionality to list a directory tree with
 the contents of all its levels (recursively) so that they are printed on the screen in alphabetical
 order within each level, also indicating whether it is a directory (D) or a file (F), and its last modification date.
 
-#Exercise 3
+Exercise 3:
 Modify the previous exercise. Now, instead of displaying the result on the screen, save the result in a TXT file.
 
-#Exercise 4
+Exercise 4:
 Add the functionality to read any TXT file and display its contents on the console.
 
-#Exercise 5
+Exercise 5:
 Now the program must serialize a Java Object to a .ser file and then deserialize it.
 
 ## Below are instructions for compiling and running each exercise from the command line.
