@@ -9,9 +9,9 @@ public class SaveTxt {
     public static void writeToFile(String content, String path) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(path))) {
             writer.write(content);
-            System.out.println("Contenido guardado en: " + path);
+            System.out.println("Saved content: ");
         } catch (IOException e) {
-            System.err.println("Error al escribir el archivo: " + e.getMessage());
+            System.err.println("Error writing file: " + e.getMessage());
         }
     }
 

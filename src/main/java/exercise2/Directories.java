@@ -6,7 +6,7 @@ import java.util.Date;
 
 public class Directories {
 
-    public static void DirectoriesSorts(String path) {
+    public static void directoriesSorts(String path) {
         File file = new File(path);
 
         String[] namesFiles = file.list();
@@ -19,7 +19,7 @@ public class Directories {
             if (markDirectoriesFiles.isDirectory()) {
 
                 System.out.println("[D] " + namesFiles[i] + " Date: " +
-                modificationDate.format(new Date(markDirectoriesFiles.lastModified())));
+                        modificationDate.format(new Date(markDirectoriesFiles.lastModified())));
 
                 String[] subDirectory = markDirectoriesFiles.list();
 

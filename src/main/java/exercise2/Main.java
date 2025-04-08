@@ -1,16 +1,14 @@
 package exercise2;
 
+import static exercise2.Directories.directoriesSorts;
 
 public class Main {
     public static void main(String[] args) {
 
-        String path = "src/main/resources/pruebasDir";
-
-        if (path.length() == 0) {
-            System.out.println("The path address of the directories is incorrect or does not exist.");
-
+        if (args.length > 0) {
+            directoriesSorts(args[0]);
         } else {
-            Directories.DirectoriesSorts(path);
+            System.out.println("The path address of the directories is incorrect or does not exist.");
 
         }
 

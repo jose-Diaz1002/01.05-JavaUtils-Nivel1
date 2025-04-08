@@ -1,12 +1,17 @@
 package exercise4;
 
+import static exercise4.ReadTxt.readFile;
+
 public class Main {
 
-
-
     public static void main(String[] args) {
-        String path = "src/main/resources/pruebasDir/jose/leer.txt";
-        ReadTxt.readFile(path);
+
+        if (args.length > 0) {
+            readFile(args[0]);
+        } else {
+            System.out.println("The path address of the directories is incorrect or does not exist.");
+
+        }
 
     }
 

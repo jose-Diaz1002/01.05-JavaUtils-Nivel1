@@ -1,8 +1,10 @@
 package exercise4;
+
 import java.io.*;
+
 public class ReadTxt {
 
-    public static void readFile (String path){
+    public static void readFile(String path) {
 
         try {
             FileReader reader = new FileReader(path);

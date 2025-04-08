@@ -1,22 +1,26 @@
 package exercise1;
 
-
 import java.io.File;
-import java.util.Arrays;
 
 public class Directories {
 
-    public static void DirectoriesSorts1(String path) {
+    public static void directoriesSorts(String path) {
         File file = new File(path);
-        System.out.println(file.getAbsolutePath());
-        System.out.println(file.exists());
-    }
 
-    public static void DirectoriesSorts(String path) {
-        File file = new File(path);
+        if (!file.exists() || !file.isDirectory()) {
+            System.out.println("The directory does not exist or is invalid: " + path);
+            return;
+        }
+
         String[] namesFiles = file.list();
-        for (int i = 0; i < namesFiles.length; i++) {
-            System.out.println(namesFiles[i]);
+
+        if (namesFiles == null || namesFiles.length == 0) {
+            System.out.println("The directory does not exist or is invalid:");
+            return;
+        }
+
+        for (String name : namesFiles) {
+            System.out.println(name);
         }
     }
 }

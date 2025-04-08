@@ -6,7 +6,8 @@ import java.util.ArrayList;
 
 public class DesSerialization {
 
-    public static ArrayList<Persona> deserializeObjects (String filePath){
+    public static ArrayList<Persona> deserializeObjects(String filePath) {
+
         try {
             ObjectInputStream readFile = new ObjectInputStream(new FileInputStream(filePath));
             ArrayList<Persona> writePersona = (ArrayList<Persona>) readFile.readObject();
@@ -14,7 +15,6 @@ public class DesSerialization {
             return writePersona;
         } catch (Exception e) {
             System.out.println("Error deserializing the object");
-
             return null;
         }
 
