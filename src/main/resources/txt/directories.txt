@@ -1,0 +1,14 @@
+[F] ApiFile(español).docx
+[F] ApiFile.docx
+[D] jose - Date: 07/04/2025 18:43:45
+   --> leer.txt
+   --> programas
+[F] personas.txt
+[D] trabajo - Date: 14/04/2025 18:42:08
+   --> carpeta4
+   --> casa.docx
+   --> otro.txt
+[D] Zeta - Date: 06/04/2025 15:58:48
+   --> luna.txt
+   --> papa
+   --> sol.txt

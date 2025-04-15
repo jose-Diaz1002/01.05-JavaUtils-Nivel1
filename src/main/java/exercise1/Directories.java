@@ -4,7 +4,7 @@ import java.io.File;
 
 public class Directories {
 
-    public static void directoriesSorts(String path) {
+    public static void listDirectoryContents(String path) {
         File file = new File(path);
 
         if (!file.exists() || !file.isDirectory()) {

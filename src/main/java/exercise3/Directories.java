@@ -6,41 +6,41 @@ import java.util.Date;
 
 public class Directories {
 
-    public static String directoriesSorts(String path) {
+    public static String getDirectoryStructure(String path) {
+        File rootDirectory = new File(path);
+        StringBuilder result = new StringBuilder();
 
-        File file = new File(path);
-        String content = "";
+        String[] directoryEntries = rootDirectory.list();
+        SimpleDateFormat dateFormatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
-        String[] namesFiles = file.list();
-        SimpleDateFormat modificationDate = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        if (directoryEntries != null) {
+            for (String entryName : directoryEntries) {
+                File entry = new File(rootDirectory.getAbsolutePath(), entryName);
 
-        for (String name : namesFiles) {
+                if (entry.isDirectory()) {
+                    result.append("[D] ")
+                            .append(entryName)
+                            .append(" - Date: ")
+                            .append(dateFormatter.format(new Date(entry.lastModified())))
+                            .append("\n");
 
-            File markDirectoriesFiles = new File(file.getAbsolutePath(), name);
-
-            if (markDirectoriesFiles.isDirectory()) {
-
-                content += "[D]" + name + " Date: " +
-                        modificationDate.format(new Date(markDirectoriesFiles.lastModified())) + "\n";
-            }
-
-            if (markDirectoriesFiles.isDirectory()) {
-
-                String[] subDirectory = markDirectoriesFiles.list();
-
-                for (String sub : subDirectory) {
-
-                    content += "   --> " + sub + "\n";
+                    String[] childItems = entry.list();
+                    if (childItems != null) {
+                        for (String child : childItems) {
+                            result.append("   --> ").append(child).append("\n");
+                        }
+                    }
+                } else {
+                    result.append("[F] ").append(entryName).append("\n");
                 }
-
-            } else {
-                content += "[F]" + name + "\n";
-
             }
-
+        } else {
+            result.append("Directory does not exist or is not accessible.\n");
         }
-        return content;
+
+        return result.toString();
     }
+
 }
 
 

@@ -1,3 +1,4 @@
+
 package exercise4;
 
 import java.io.*;
@@ -25,3 +26,4 @@ public class ReadTxt {
 
     }
 }
+
